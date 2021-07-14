@@ -106,12 +106,26 @@ body{
 }
 /* Latest news section style end  */
 
+/* special moments section style start  */
+.moments{
+    padding: 0px;
+}
+.moments_content{
+    text-align: center;
+}
+.Moment_title{
+    font-size: 20px;
+    font-weight: 900;
+}
+/* special moments section style end */
+
 /* footer section style start  */
 footer{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 60px;
+    padding-top: 60px;
 }
 .social_icon_content{
     width: 40px;
@@ -184,7 +198,6 @@ footer p{
     /* latest news mobile styles end */
     
     /* footer mobile style start  */
-
     footer img{
         width: 275px;
         height: 63px;
