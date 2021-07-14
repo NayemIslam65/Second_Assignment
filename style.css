@@ -37,7 +37,7 @@ body{
 /* club banner style end  */
 
 /* player section style start  */
-.players_main{
+.container{
         display: flex;
         justify-content: center;
 }
@@ -71,6 +71,40 @@ body{
     font-size: 16px;
 }
 /* player section style end  */
+
+/* Latest news section style start  */
+.latest_news{
+    width: 80%;
+}
+.single_news{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+.news{
+    display: flex;
+
+}
+.news_img{
+    width: 35%;
+}
+.news_img img{
+    width: 100%;
+    height: 120px;
+}
+.news_content{
+    width: 65%;
+    padding: 0px 20px;
+}
+.news_content h3{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.custom_more{
+    color: black;
+    font-weight: 900;
+}
+/* Latest news section style end  */
 
 /* footer section style start  */
 footer{
@@ -120,11 +154,11 @@ footer p{
     /* club banner mobile style start */
 
     /* player mobile style start */
-    .players{
+    .players, .single_news{
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
     }
-    .player{
+    .player, .news{
         width: 300px;
         padding: 15px;
         display: flex;
@@ -133,6 +167,21 @@ footer p{
         margin: 0 auto;
     }
     /* player mobile style end */
+
+    /* latest news mobile styles start */
+    .news{
+        padding-left: 0px;
+    }
+    .news_img {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+    }
+    .news_content {
+        width: 100%;
+        margin-top: 20px;
+    }
+    /* latest news mobile styles end */
     
     /* footer mobile style start  */
 
