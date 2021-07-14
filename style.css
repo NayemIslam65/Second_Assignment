@@ -1,28 +1,34 @@
-body{
+body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
 
 }
-.club_banner{
+
+/* club banner style start  */
+.club_banner {
     background-color: #2D25A0;
     display: flex;
     color: white;
     justify-content: center;
     padding: 100px 10px;
 }
-.club_banner_details{
+
+.club_banner_details {
     width: 45%;
 }
-.club_banner_details h1{
+
+.club_banner_details h1 {
     font-size: 64px;
     margin-top: 0px;
-   
+
 }
-.club_banner_details img{
+
+.club_banner_details img {
     width: 556px;
     height: 438px;
 }
-.custom_button{
+
+.custom_button {
     background-color: #E02C6D;
     color: white;
     border: none;
@@ -30,25 +36,29 @@ body{
     padding: 10px 20px;
     font-family: 'Poppins', sans-serif;
 }
-.custom_button:hover{
+
+.custom_button:hover {
     transform: scale(1.2);
     transition: transform 3s ease-in-out;
 }
+
 /* club banner style end  */
 
 /* player section style start  */
-.container{
-        display: flex;
-        justify-content: center;
+.container {
+    display: flex;
+    justify-content: center;
 }
-.players{
-    width: 80%;
+
+.players {
+    width: 85%;
     margin: 50px 0px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
 }
-.player{
+
+.player {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,130 +66,164 @@ body{
     border-radius: 2px;
     box-shadow: 10px 10px 30px lightgray;
 }
-.player img{
+
+.player img {
     width: 300px;
     height: 256px;
 }
-.player_name{
+
+.player_name {
     color: #18191F;
     font-weight: bold;
     font-size: 28px;
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.player_details{
+
+.player_details {
     font-size: 16px;
 }
+
 /* player section style end  */
 
 /* Latest news section style start  */
-.latest_news, .special_moments{
-    width: 80%;
+.latest_news,
+.special_moments {
+    width: 85%;
 }
-.single_news{
+
+.single_news {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 40px;
 }
-.news{
+
+.news {
     display: flex;
 
 }
-.news_img{
+
+.news_img {
     width: 35%;
 }
-.news_img img{
+
+.news_img img {
     width: 100%;
     height: 120px;
 }
-.news_content{
+
+.news_content {
     width: 65%;
     padding: 0px 20px;
 }
-.news_content h3{
+
+.news_content h3 {
     margin-top: 0px;
     margin-bottom: 10px;
 }
-.custom_more{
+
+.custom_more {
     color: black;
     font-weight: 900;
 }
+
 /* Latest news section style end  */
 
 /* special moments section style start  */
-.moments{
+.moments_main {
+    grid-gap: 90px;
+}
+
+.moments {
     padding: 0px;
     border-radius: 5px;
     border: 5px solid lightgray;
 }
-.moments_content{
+
+.moments_content {
     text-align: center;
 }
-.Moment_title{
+
+.Moment_title {
     font-size: 20px;
     font-weight: 900;
     color: rgb(110, 102, 102);
     margin-bottom: 10px;
 }
-.moment_name{
+
+.moment_name {
     margin-top: 0px;
 }
+
 /* special moments section style end */
 
 /* footer section style start  */
-footer{
+footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 60px;
     padding-top: 60px;
 }
-.social_icon_content{
+
+.social_icon_content {
     width: 40px;
     padding: 5px 10px;
     border-radius: 50%;
     background-color: silver;
     margin-right: 10px;
 }
-.social_icon_content:last-child{
+
+.social_icon_content:last-child {
     margin-right: 0px;
 }
-footer img{
+
+footer img {
     width: 484px;
     height: 110px;
     margin-bottom: 10px;
 }
-footer p{
+
+footer p {
     margin-top: 20px;
 }
+
 /* footer section style end  */
 
 /* media queries start  */
 @media only screen and (max-width: 688px) {
+
     /* club banner mobile style start */
-    .club_banner{
+    .club_banner {
         flex-direction: column;
-     
+
     }
+
     .club_banner_details {
         width: 100%;
     }
+
     .club_banner_details h1 {
         font-size: 36px;
     }
+
     .club_banner_details img {
         width: 300px;
         height: 260px;
         margin-top: 40px;
     }
+
     /* club banner mobile style start */
 
     /* player mobile style start */
-    .players, .single_news{
+    .players,
+    .single_news {
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
     }
-    .player, .news{
+
+    .player,
+    .news {
         width: 300px;
         padding: 15px;
         display: flex;
@@ -187,29 +231,40 @@ footer p{
         align-items: center;
         margin: 0 auto;
     }
+
     /* player mobile style end */
 
     /* latest news mobile styles start */
-    .news{
+    .latest_news,
+    .special_moments {
+        width: 92%;
+    }
+
+    .news {
         padding-left: 0px;
     }
+
     .news_img {
         width: 100%;
         justify-content: center;
         display: flex;
     }
+
     .news_content {
         width: 100%;
         margin-top: 20px;
     }
+
     /* latest news mobile styles end */
-    
+
     /* footer mobile style start  */
-    footer img{
+    footer img {
         width: 275px;
         height: 63px;
         margin-bottom: 10px;
     }
+
     /* footer mobile style end  */
 }
+
 /* media queries end */
