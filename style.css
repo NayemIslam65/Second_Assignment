@@ -91,7 +91,9 @@ body {
 .special_moments {
     width: 85%;
 }
-
+.section_title{
+    text-align: center;
+}
 .single_news {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
