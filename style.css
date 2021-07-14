@@ -72,6 +72,33 @@ body{
 }
 /* player section style end  */
 
+/* footer section style start  */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+.social_icon_content{
+    width: 40px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background-color: silver;
+    margin-right: 10px;
+}
+.social_icon_content:last-child{
+    margin-right: 0px;
+}
+footer img{
+    width: 484px;
+    height: 110px;
+    margin-bottom: 10px;
+}
+footer p{
+    margin-top: 20px;
+}
+/* footer section style end  */
+
 /* media queries start  */
 @media only screen and (max-width: 688px) {
     /* club banner mobile style start */
@@ -107,5 +134,13 @@ body{
     }
     /* player mobile style end */
     
+    /* footer mobile style start  */
+
+    footer img{
+        width: 275px;
+        height: 63px;
+        margin-bottom: 10px;
+    }
+    /* footer mobile style end  */
 }
 /* media queries end */
