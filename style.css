@@ -73,7 +73,7 @@ body{
 /* player section style end  */
 
 /* Latest news section style start  */
-.latest_news{
+.latest_news, .special_moments{
     width: 80%;
 }
 .single_news{
@@ -109,6 +109,8 @@ body{
 /* special moments section style start  */
 .moments{
     padding: 0px;
+    border-radius: 5px;
+    border: 5px solid lightgray;
 }
 .moments_content{
     text-align: center;
@@ -116,6 +118,11 @@ body{
 .Moment_title{
     font-size: 20px;
     font-weight: 900;
+    color: rgb(110, 102, 102);
+    margin-bottom: 10px;
+}
+.moment_name{
+    margin-top: 0px;
 }
 /* special moments section style end */
 
