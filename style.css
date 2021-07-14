@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+.club_banner{
+    background-color: #2D25A0;
+    display: flex;
+    color: white;
+    justify-content: center;
+    padding: 100px 10px;
+}
+.club_banner_details{
+    width: 45%;
+}
+.club_banner_details h1{
+    font-size: 64px;
+    margin-top: 0px;
+   
+}
+.club_banner_details img{
+    width: 556px;
+    height: 438px;
+}
+.custom_button{
+    background-color: #E02C6D;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+/* media queries start  */
+@media only screen and (max-width: 600px) {
+    .club_banner{
+        flex-direction: column;
+        padding: 50px 0px;
+    }
+    .club_banner_details {
+        width: 100%;
+    }
+    .club_banner_details h1 {
+        font-size: 36px;
+    }
+    .club_banner_details img {
+        width: 270px;
+        height: 260px;
+    }
+    
+}
+/* media queries end */
